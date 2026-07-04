@@ -2,6 +2,7 @@
    CONSTANTS
    ============================================================ */
 const CSV_FILE          = 'clips.csv';
+const LOGO_SRC          = 'LOGO.PNG';
 const STRIP_COUNT       = 55;        // Total cards in the roulette track (40–60 range)
 const WINNER_INDEX      = 45;        // The winning card index (0-based)
 const CARD_WIDTH        = 200;       // px — must match CSS .roulette-card width
@@ -85,7 +86,7 @@ function createCard(clip) {
   card.className = 'roulette-card';
 
   const img = document.createElement('img');
-  img.src = 'LOGO.PNG';
+  img.src = LOGO_SRC;
   img.alt = clip.title;
   img.loading = 'eager';
   img.draggable = false;
