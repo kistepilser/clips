@@ -85,7 +85,7 @@ function createCard(clip) {
   card.className = 'roulette-card';
 
   const img = document.createElement('img');
-  img.src = clip.previewImageUrl;
+  img.src = 'LOGO.PNG';
   img.alt = clip.title;
   img.loading = 'eager';
   img.draggable = false;
